@@ -1,0 +1,52 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.devtools.ksp)
+    id "kotlin-parcelize"
+}
+
+apply from: "../shared.gradle"
+
+android {
+    namespace 'com.github.aliftrd.core'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField "String", "baseUrl", "\"https://api.themoviedb.org/3/\""
+        buildConfigField "String", "apiKey", "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZWY5NzAyMzI5NmY2ZjljZDA1YTFjMWExZTI2MmIwNyIsInN1YiI6IjYzNzM5Y2IzMjE2MjFiMDA5YmEzYzQ1OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xFZigQbuIiFsdpQUDGNt9VAzwdGD__kAQCHPxm07-PE\""
+        buildConfigField "String", "imageBaseUrl", "\"https://image.tmdb.org/t/p/original\""
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.logging.interceptor
+
+    api libs.coil
+}

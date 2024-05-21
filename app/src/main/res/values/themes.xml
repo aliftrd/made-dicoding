@@ -1,0 +1,17 @@
+<resources>
+    <style name="Base.Theme.Moovai" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/light_navy</item>
+        <item name="colorOnSecondaryContainer">@color/blue</item>
+        <item name="colorSecondaryContainer">@color/light_navy</item>
+        <item name="colorSurface">@color/light_navy</item>
+        <item name="colorSurfaceBright">@color/orange</item>
+        <item name="colorOnSurface">@color/blue</item>
+        <item name="colorSurfaceContainer">@color/navy</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/navy</item>
+    </style>
+
+    <style name="Theme.Moovai" parent="Base.Theme.Moovai" />
+</resources>

@@ -1,0 +1,34 @@
+dependencies {
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    // Coroutines
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.kotlinx.coroutines.core
+
+    // KTX
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.fragment.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.lifecycle.livedata.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    
+    // Navigation
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.navigation.ui.ktx
+
+    // Koin
+    implementation(platform(libs.koin.bom))
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    testImplementation libs.koin.test
+    testImplementation libs.koin.test.junit4
+}
