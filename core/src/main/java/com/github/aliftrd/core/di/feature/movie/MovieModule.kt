@@ -8,8 +8,8 @@ import org.koin.dsl.module
 
 val movieModule = module {
     factory<MovieUseCase> { MovieInteractor(get()) }
-    factory<MovieRepository> { MovieDataStore(get(), get()) }
+    factory<MovieRepository> { MovieDataStore(get(), get(), get()) }
 
-    single { MovieDataStore(get(), get()) }
+    single { MovieDataStore(get(), get(), get()) }
     single { MovieInteractor(get()) }
 }

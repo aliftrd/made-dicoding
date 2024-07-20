@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="rating_icon">Rating Icon</string>
+    <string name="movie_backdrop">Movie Backdrop</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="loading">Loading...</string>
+</resources>

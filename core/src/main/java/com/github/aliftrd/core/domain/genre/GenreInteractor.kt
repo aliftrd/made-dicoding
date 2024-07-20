@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
 
-class GenreInteractor(private val repository: GenreRepository):GenreUseCase {
+class GenreInteractor(private val repository: GenreRepository) : GenreUseCase {
     override fun getMovieGenre(): Flow<RemoteResponse<List<Genre>>> {
         return repository.getMovieGenre().flowOn(Dispatchers.IO)
     }

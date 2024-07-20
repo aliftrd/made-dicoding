@@ -1,0 +1,10 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="soft_white">#828389</color>
+    <color name="black">#000000</color>
+    <color name="blue">#12CDD9</color>
+    <color name="orange">#FC8500</color>
+    <color name="navy">#171725</color>
+    <color name="red">#F53F40</color>
+    <color name="light_navy">#252835</color>
+</resources>

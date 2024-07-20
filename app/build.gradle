@@ -39,9 +39,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    dynamicFeatures = [":feature:favorite"]
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(':core')
+    implementation project(':feature:home')
+    implementation project(':feature:search')
+    implementation project(':feature:detail')
+    implementation libs.androidx.navigation.dynamic.features.fragment
+    implementation libs.androidx.core.splashscreen
 }

@@ -18,14 +18,23 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:name="androidx.navigation.fragment.NavHostFragment"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/main_navigation" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab_favorite"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/ic_favorite"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

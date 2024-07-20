@@ -3,11 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
-    <string name="most_popular">Most popular</string>
-    <string name="see_all">See All</string>
-    <string name="movie_poster">Movie Poster</string>
-    <string name="rating_icon">Rating Icon</string>
-    <string name="movie_backdrop">Movie backdrop</string>
-    <string name="movie_not_found">Movie not found</string>
-    <string name="story_line_title">Story Line</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="about_description">Moovai is a movie catalog application that provides information about movies. This application is made using the MVVM architecture pattern and uses the API from The Movie Database (TMDb).</string>
+    <string name="thanks_to_list">1. God\n2. Dicoding\n3. The Movie Database (TMDb)</string>
+    <string name="thanks_to">Thanks To</string>
 </resources>

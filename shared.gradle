@@ -10,6 +10,9 @@ dependencies {
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
 
+    // Shimmer
+    implementation libs.shimmer
+
     // Coroutines
     implementation libs.kotlinx.coroutines.android
     implementation libs.kotlinx.coroutines.core
@@ -31,4 +34,13 @@ dependencies {
     implementation(libs.koin.android)
     testImplementation libs.koin.test
     testImplementation libs.koin.test.junit4
+
+    // Test
+    testImplementation libs.androidx.core.testing // InstantTaskExecutorRule
+    testImplementation libs.kotlinx.coroutines.test //TestDispatcher
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.inline
+
+    // Fancy Toast
+    implementation libs.fancytoast
 }
