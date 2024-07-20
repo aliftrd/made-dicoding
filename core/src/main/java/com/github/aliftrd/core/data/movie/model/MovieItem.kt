@@ -15,7 +15,7 @@ abstract class BaseMovieResponse {
 
 data class BasicMovieResponse(
     @field:SerializedName("results")
-    val results: List<MovieItem> = emptyList()
+    val results: List<MovieItem>
 ) : BaseMovieResponse()
 
 data class NowPlayingMovieResponse(
@@ -23,7 +23,7 @@ data class NowPlayingMovieResponse(
     val dates: Dates,
 
     @field:SerializedName("results")
-    val results: List<MovieItem> = emptyList()
+    val results: List<MovieItem>
 ) : BaseMovieResponse()
 
 data class MovieItem(

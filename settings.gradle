@@ -22,3 +22,7 @@ dependencyResolutionManagement {
 rootProject.name = "Moovai"
 include ':app'
 include ':core'
+include ':feature:home'
+include ':feature:favorite'
+include ':feature:detail'
+include ':feature:search'

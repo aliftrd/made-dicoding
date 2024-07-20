@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_navigation"
+    app:startDestination="@id/searchFragment">
+
+    <include app:graph="@navigation/detail_navigation" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.github.aliftrd.search.presentation.SearchFragment"
+        tools:layout="@layout/fragment_search"
+        android:label="fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_detailFragment"
+            app:destination="@id/detail_navigation">
+            <argument
+                android:name="movieId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+</navigation>

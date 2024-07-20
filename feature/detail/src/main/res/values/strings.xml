@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_not_found">Movie Not Found</string>
+    <string name="story_line_title">Story Line</string>
+    <string name="cast_title">Cast and Crew</string>
+    <string name="added_to_favorite">Added to Favorite</string>
+    <string name="removed_from_favorite">Removed from favorite</string>
+</resources>

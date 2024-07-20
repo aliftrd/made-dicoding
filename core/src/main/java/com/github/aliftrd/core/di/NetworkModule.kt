@@ -1,5 +1,6 @@
 package com.github.aliftrd.core.di
 
+import com.github.aliftrd.core.data.castcrew.remote.CastCrewService
 import com.github.aliftrd.core.data.genre.remote.GenreService
 import com.github.aliftrd.core.data.lib.HeaderInterceptor
 import com.github.aliftrd.core.data.movie.remote.MovieService
@@ -32,6 +33,7 @@ val networkModule = module {
 
     single { provideGenreService(get()) }
     single { providePopularService(get()) }
+    single { provideCastCrewService(get()) }
 }
 
 private fun getHeaderInterceptor(): Interceptor {
@@ -42,4 +44,5 @@ private fun getHeaderInterceptor(): Interceptor {
 }
 
 private fun provideGenreService(retrofit: Retrofit): GenreService = retrofit.create(GenreService::class.java)
+private fun provideCastCrewService(retrofit: Retrofit): CastCrewService = retrofit.create(CastCrewService::class.java)
 private fun providePopularService(retrofit: Retrofit): MovieService = retrofit.create(MovieService::class.java)

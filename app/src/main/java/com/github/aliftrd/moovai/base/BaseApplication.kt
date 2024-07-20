@@ -1,10 +1,10 @@
 package com.github.aliftrd.moovai.base
 
 import android.app.Application
-import com.github.aliftrd.core.di.feature.genre.genreModule
-import com.github.aliftrd.core.di.feature.movie.movieModule
-import com.github.aliftrd.core.di.networkModule
-import com.github.aliftrd.moovai.di.viewModelModule
+import com.github.aliftrd.core.di.coreModule
+import com.github.aliftrd.detail.di.detailModule
+import com.github.aliftrd.home.di.homeModule
+import com.github.aliftrd.search.di.searchModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -17,12 +17,10 @@ class BaseApplication : Application() {
             androidLogger(Level.DEBUG)
             androidContext(this@BaseApplication)
             modules(
-                listOf(
-                    networkModule,
-                    viewModelModule,
-                    genreModule,
-                    movieModule,
-                ),
+                coreModule,
+                homeModule,
+                searchModule,
+                detailModule
             )
         }
     }
