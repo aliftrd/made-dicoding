@@ -16,5 +16,8 @@
 
         <item name="android:textColor">@color/white</item>
         <item name="android:windowBackground">@color/navy</item>
+
+        <item name="android:windowSplashScreenBackground">@color/navy</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo</item>
     </style>
 </resources>
